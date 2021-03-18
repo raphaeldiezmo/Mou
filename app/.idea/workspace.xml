@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb3b4d98-000e-4ed4-bec8-1405f0cdfd17" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/mou-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Mou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/UploadItems.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/fileChooser.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/mou.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/mouIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/FileChoose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Mou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/UploadItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/fileChooser.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/mou.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/mouIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pwD3eDm5UJrhvNHl6rhRnkGCh4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="JarApplication" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="mou-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb3b4d98-000e-4ed4-bec8-1405f0cdfd17" name="Default Changelist" comment="" />
+      <created>1616085061128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616085061128</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
