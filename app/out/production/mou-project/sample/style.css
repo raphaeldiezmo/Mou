@@ -13,7 +13,6 @@
 .tab{
     -fx-background-color: #012c33;
     -fx-pref-width: 200;
-    -fx-margin-left: 100;
 }
 .tab:selected{
     -fx-text-base-color: #6ec5ff;
