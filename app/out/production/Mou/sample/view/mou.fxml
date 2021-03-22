@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<StackPane stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
    <children>
 
           <BorderPane prefHeight="200.0" prefWidth="200.0">
@@ -32,7 +32,7 @@
                                           </Text>
                                           <ImageView fx:id="logo" fitHeight="150.0" fitWidth="166.0" layoutX="48.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@Mou.png" />
+                                                <Image url="@../img/Mou.png" />
                                              </image>
                                           </ImageView>
                                           <Text fill="#cfff70" layoutX="226.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Mou Open Source Application" textAlignment="CENTER" wrappingWidth="329.13671875">
