@@ -6,13 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("mou.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("view/mou.fxml"));
         primaryStage.setTitle("Mou");
         primaryStage.getIcons().add(new Image(("file: icon.ico")));
         primaryStage.setScene(new Scene(root));
