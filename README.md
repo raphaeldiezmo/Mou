@@ -1,4 +1,4 @@
-<h1 align="center">Mou - MMORPG grinding automation</h1> 
+<h1 align="center">Mou - MMORPG hunting automation</h1> 
   
   <p align="center" font="italics">
   <img src="/logo/Mou.png" alt="mou-logo" width="120px" height="120px" style="max-width:100%;"><Br>
