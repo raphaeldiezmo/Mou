@@ -1,12 +1,14 @@
+/*Root style*/
 .root{
     -fx-background-color: #012c33;
 }
+
+/*Styling the border pane*/
 .border-pane{
     -fx-background-color: #012c33;
 }
 
-
-
+/*Styling the Tabs, Tab-pane, Tab-header, Tab-header-area, Tab-header-background*/
 .tab-pane .tab-header-area .tab-header-background {
     -fx-background-color: #002b30;
 }
@@ -18,7 +20,6 @@
     -fx-text-base-color: #6ec5ff;
     -fx-font-weight: bolder;
   }
-
 .tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
     -fx-alignment: CENTER;
     -fx-pref-width: 200;
@@ -34,11 +35,14 @@
 
 }
 
+
+
+/*Styling the toolbar*/
 .toolbar{
     -fx-background-color:  #012c33;
 }
 
-
+/*Upload button style*/
 .upload-bttn:hover{
     -fx-background-color:  #024559;
     -fx-text-base-color: #012c33;

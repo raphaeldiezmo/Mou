@@ -26,9 +26,20 @@ public class Controller extends Application implements Initializable {
     private AnchorPane uploadItemsContainer;
     @FXML
     private Button uploadPhotoBttn;
+    @FXML
+    private Button stopBttn;
+    @FXML
+    private Button startBttn;
 
     private Desktop desktop = Desktop.getDesktop();
 
+
+    /**
+     * This initializes the functionality or actions of each of the declared user interface
+     * object that is accessible by the user.
+     * @param url This contains the pointer to the directory of an object
+     * @param rb This contains the specific type of the object
+     */
     @Override
     public void initialize (URL url, ResourceBundle rb){
 
@@ -56,20 +67,26 @@ public class Controller extends Application implements Initializable {
 
         //upload button action
         uploadPhotoBttn.setOnAction(e->getUploader());
+
+        startBttn.setOnAction(event -> getUploader());
+        stopBttn.setOnAction(event -> getUploader());
     }
 
     /**
-     *
+     * This allows the user to get the image uploader where it calls out the other methods
+     * such as storing the images inside the scroll pane.
      */
     private void getUploader() {
 
     }
 
     /**
-     * Method that will call out the GitHub repository using the default web browser
-     * of user's preferences
-     * @throws URISyntaxException
-     * @throws IOException
+     * This method that will call out the GitHub repository using the default web browser
+     * that is set in the user's desktop
+     * @throws URISyntaxException this will throw an error once the syntax inside the created URI object's parenthesis
+     *                            is not a string
+     * @throws IOException this will throw an error once the thrown object is null whereas the desktop browse param
+     * must not be a null
      */
     @FXML
     private void goToGitHub() throws URISyntaxException, IOException {
@@ -77,18 +94,32 @@ public class Controller extends Application implements Initializable {
 
     }
 
+    /**
+     * This method will get the user to open a new issue form from the Mou repository using
+     * the default web browser that is set in the user's desktop
+     * @throws URISyntaxException this will throw an error once the syntax inside the created URI object's parenthesis
+     *                            is not a string
+     * @throws IOException this will throw an error once the thrown object is null whereas the desktop browse param
+     *                     must not be a null
+     */
     @FXML
-    private void reportAnIssue() throws URISyntaxException, IOException, URISyntaxException {
+    private void reportAnIssue() throws IOException, URISyntaxException {
         desktop.browse(new URI("https://github.com/raphael-di-ezmo/Mou/issues/new"));
 
     }
 
+
     @FXML
     private void loadTab(ActionEvent event) throws IOException {
     }
+
+    /**
+     * This is just a default method that must be thrown for the Controller class
+     * as controller class implements application
+     * @param primaryStage this just contains the primary stage as a parameter
+     */
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage){
 
     }
-
 }

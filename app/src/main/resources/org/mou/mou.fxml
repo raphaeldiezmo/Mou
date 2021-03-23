@@ -7,139 +7,175 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<StackPane stylesheets="@style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.mou.Controller">
-   <children>
-
-          <BorderPane prefHeight="200.0" prefWidth="200.0">
-         <bottom>
-                  <TabPane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="658.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
-                      <tabs>
-                          <Tab id="tab-header" text="   W e l c o m e   ">
-                              <content>
-                                  <AnchorPane fx:id="welcomeContainer" minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="658.0">
-                           <children>
-                              <BorderPane layoutX="24.0" layoutY="21.0" prefHeight="266.0" prefWidth="610.0">
-                                 <center>
-                                    <Pane fx:id="welcomePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <Text fill="#cfff70" layoutX="304.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M o u" textAlignment="CENTER" wrappingWidth="172.13671875">
-                                             <font>
-                                                <Font name="System Bold" size="33.0" />
-                                             </font>
-                                             <effect>
-                                                <Glow level="0.32" />
-                                             </effect>
-                                          </Text>
-                                          <ImageView fx:id="logo" fitHeight="150.0" fitWidth="166.0" layoutX="48.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="https://github.com/raphael-di-ezmo/Mou/blob/main/logo/Mou.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Text fill="#cfff70" layoutX="226.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Mou Open Source Application" textAlignment="CENTER" wrappingWidth="329.13671875">
-                                             <effect>
-                                                <Glow level="0.32" />
-                                             </effect>
-                                             <font>
-                                                <Font size="16.0" />
-                                             </font>
-                                          </Text>
-                                          <Text fill="#cfff70" layoutX="272.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player, are you ready to get grinding using this automated system?" textAlignment="CENTER" wrappingWidth="236.13671875">
-                                             <effect>
-                                                <Glow level="0.32" />
-                                             </effect>
-                                             <font>
-                                                <Font size="13.0" />
-                                             </font>
-                                          </Text>
-                                          <Hyperlink fx:id="getGitHub" layoutX="14.0" layoutY="229.0" prefHeight="23.0" prefWidth="217.0" text="Do you want to contribute? Click here!" textAlignment="CENTER" textFill="#9e59f0" />
-                                          <Hyperlink fx:id="reportBugIssue" layoutX="231.0" layoutY="229.0" text="Report Bugs and Issues?" textFill="#70f1ff" />
-                                          <Hyperlink fx:id="getSuggestion" layoutX="372.0" layoutY="229.0" text="Any Suggestions for future development?" textFill="#f28955" />
-                                       </children>
-                                    </Pane>
-                                 </center>
-                              </BorderPane>
-                              <Line endX="-8.0" layoutX="164.0" layoutY="1.0" startX="-97.0" stroke="#00bbf7">
-                                 <effect>
-                                    <Glow level="1.0" />
-                                 </effect>
-                              </Line>
-                           </children></AnchorPane>
-                              </content>
-                          </Tab>
-                          <Tab text="I t e m   U p l o a d e r">
-                              <content>
-                                  <AnchorPane fx:id="uploadItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="440.0">
-                           <children>
-                              <Pane layoutX="329.0" layoutY="9.0" prefHeight="291.0" prefWidth="321.0">
-                                 <children>
-                                    <ScrollPane fx:id="imgViewScrlPane" layoutX="-6.0" prefHeight="235.0" prefWidth="327.0" style="-fx-background-color: #012c33;">
-                                      <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                                      </content>
-                                    </ScrollPane>
-                                    <Button id="upload-bttn" fx:id="uploadPhotoBttn" layoutX="38.0" layoutY="244.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #012c33; -fx-border-color: #63c2bb; -fx-border-radius: 100px;" styleClass="upload-bttn" text="Upload photo" textAlignment="CENTER" textFill="#63c2bb">
-                                       <font>
-                                          <Font name="Carlito" size="12.0" />
-                                       </font>
-                                    </Button>
-                                    <Text fill="WHITE" fontSmoothingType="LCD" layoutX="151.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or Drag and Drop your photo">
-                                       <effect>
-                                          <Glow />
-                                       </effect>
+<StackPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="org.mou.Controller">
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+        <bottom>
+            <TabPane blendMode="DARKEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                     minWidth="-Infinity" prefHeight="337.0" prefWidth="658.0" tabClosingPolicy="UNAVAILABLE"
+                     BorderPane.alignment="CENTER">
+                <Tab id="tab-header" text="   W e l c o m e   ">
+                    <AnchorPane fx:id="welcomeContainer" minHeight="0.0" minWidth="0.0" prefHeight="287.0"
+                                prefWidth="658.0">
+                        <BorderPane layoutX="24.0" layoutY="21.0" prefHeight="266.0" prefWidth="610.0">
+                            <center>
+                                <Pane fx:id="welcomePane" prefHeight="200.0" prefWidth="200.0"
+                                      BorderPane.alignment="CENTER">
+                                    <Text fill="#cfff70" layoutX="304.0" layoutY="76.0"
+                                          strokeType="OUTSIDE" strokeWidth="0.0" text="M o u"
+                                          textAlignment="CENTER" wrappingWidth="172.13671875">
+                                        <font>
+                                            <Font name="System Bold" size="33.0"/>
+                                        </font>
+                                        <effect>
+                                            <Glow level="0.32"/>
+                                        </effect>
                                     </Text>
-                                 </children>
-                              </Pane>
-                              <Text fill="#ff6e6e" layoutX="116.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I n s t r u c t i o n s" textAlignment="CENTER">
-                                 <effect>
-                                    <Glow />
-                                 </effect>
-                              </Text>
-                              <Text fill="#9d70ff" layoutX="50.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First is to upload a photo of your item. To do that, you can use snipping tool or screenshot and crop the actual item. Try to make it as accurate as it should to get better results." textAlignment="JUSTIFY" wrappingWidth="246.693359375">
-                                 <effect>
-                                    <Glow />
-                                 </effect>
-                              </Text>
-                              <Text fill="#9d70ff" layoutX="20.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER">
-                                 <effect>
-                                    <Glow />
-                                 </effect>
-                                 <font>
-                                    <Font size="33.0" />
-                                 </font>
-                              </Text>
-                              <Text fill="#ffa870" layoutX="50.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also drag and drop a photo to the right hand panel. After uploading all the items in the jpeg or PNG format. You can proceed to the Setup Automation and find the instructions on the left and get started grinding AFK" wrappingWidth="246.693359375">
-                                 <effect>
-                                    <Glow />
-                                 </effect>
-                              </Text>
-                              <Text fill="#ffa870" layoutX="20.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER">
-                                 <effect>
-                                    <Glow />
-                                 </effect>
-                                 <font>
-                                    <Font size="33.0" />
-                                 </font>
-                              </Text>
-                              <Line endX="100.0" layoutX="275.0" layoutY="1.0" startX="-28.0" stroke="#00bbf7" />
-                           </children></AnchorPane>
-                              </content>
-                          </Tab>
-                          <Tab text="   S e t u p   A u t o m a t i o n   ">
-                              <content>
-                                  <AnchorPane fx:id="setupAutomationContainer" minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="639.0">
-                           <children>
-                              <Button fx:id="startBttn" layoutX="180.0" layoutY="267.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="144.0" style="-fx-background-color: transparent; -fx-border-color: #55fa91; -fx-border-radius: 100;" text="S t a r t" textFill="#55fa91" />
-                              <Button fx:id="stopBttn" layoutX="334.0" layoutY="267.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="144.0" style="-fx-background-color: transparent; -fx-border-color: #fc5454; -fx-border-radius: 100;" text="S t o p" textFill="#fc5454" />
-                              <Line endX="87.0" layoutX="510.0" layoutY="1.0" startX="-84.0" stroke="#00bbf7" />
-                           </children></AnchorPane>
-                              </content>
-                          </Tab>
-                      </tabs>
-               <effect>
-                  <Glow />
-               </effect>
-                  </TabPane>
-         </bottom>
-          </BorderPane>
-   </children>
+                                    <ImageView fx:id="logo" fitHeight="150.0" fitWidth="166.0"
+                                               layoutX="48.0" layoutY="28.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <effect>
+                                            <DropShadow height="37.31" radius="19.265" spread="0.09"
+                                                        width="41.75"/>
+                                        </effect>
+                                        <Image url="@img/Mou.png"/>
+                                    </ImageView>
+                                    <Text fill="#cfff70" layoutX="226.0" layoutY="98.0"
+                                          strokeType="OUTSIDE" strokeWidth="0.0"
+                                          text="Welcome to Mou Open Source Application"
+                                          textAlignment="CENTER" wrappingWidth="329.13671875">
+                                        <effect>
+                                            <Glow level="0.32"/>
+                                        </effect>
+                                        <font>
+                                            <Font size="16.0"/>
+                                        </font>
+                                    </Text>
+                                    <Text fill="#cfff70" layoutX="272.0" layoutY="117.0"
+                                          strokeType="OUTSIDE" strokeWidth="0.0"
+                                          text="Player, are you ready to get grinding using this automated system?"
+                                          textAlignment="CENTER" wrappingWidth="236.13671875">
+                                        <effect>
+                                            <Glow level="0.32"/>
+                                        </effect>
+                                        <font>
+                                            <Font size="13.0"/>
+                                        </font>
+                                    </Text>
+                                    <Hyperlink fx:id="getGitHub" layoutX="14.0" layoutY="229.0"
+                                               prefHeight="23.0" prefWidth="217.0"
+                                               text="Do you want to contribute? Click here!"
+                                               textAlignment="CENTER" textFill="#9e59f0"/>
+                                    <Hyperlink fx:id="reportBugIssue" layoutX="231.0" layoutY="229.0"
+                                               text="Report Bugs and Issues?" textFill="#70f1ff"/>
+                                    <Hyperlink fx:id="getSuggestion" layoutX="372.0" layoutY="229.0"
+                                               text="Any Suggestions for future development?"
+                                               textFill="#f28955"/>
+                                </Pane>
+                            </center>
+                        </BorderPane>
+                        <Line endX="-8.0" layoutX="164.0" layoutY="1.0" startX="-97.0" stroke="#00bbf7">
+                            <effect>
+                                <Glow level="1.0"/>
+                            </effect>
+                        </Line>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="I t e m   U p l o a d e r">
+                    <AnchorPane fx:id="uploadItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="242.0"
+                                prefWidth="440.0">
+                        <Pane layoutX="329.0" layoutY="9.0" prefHeight="291.0" prefWidth="321.0">
+                            <children>
+                                <ScrollPane fx:id="imgViewScrlPane" layoutX="-6.0" prefHeight="235.0"
+                                            prefWidth="327.0" style="-fx-background-color: #012c33;">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0"
+                                                    prefWidth="200.0">
+                                            <effect>
+                                                <DropShadow height="15.07" radius="7.035" width="15.07"/>
+                                            </effect>
+                                        </AnchorPane>
+                                    </content>
+                                    <effect>
+                                        <DropShadow spread="0.11"/>
+                                    </effect>
+                                </ScrollPane>
+                                <Button id="upload-bttn" fx:id="uploadPhotoBttn" layoutX="38.0" layoutY="244.0"
+                                        mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0"
+                                        style="-fx-background-color: #012c33; -fx-border-color: #63c2bb; -fx-border-radius: 100px;"
+                                        styleClass="upload-bttn" text="Upload photo" textAlignment="CENTER"
+                                        textFill="#63c2bb">
+                                    <font>
+                                        <Font name="Carlito" size="12.0"/>
+                                    </font>
+                                </Button>
+                                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="151.0" layoutY="261.0"
+                                      strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="or Drag and Drop your photo">
+                                    <effect>
+                                        <Glow/>
+                                    </effect>
+                                </Text>
+                            </children>
+                        </Pane>
+                        <Text fill="#ff6e6e" layoutX="116.0" layoutY="27.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0" text="I n s t r u c t i o n s" textAlignment="CENTER">
+                            <effect>
+                                <Glow/>
+                            </effect>
+                        </Text>
+                        <Text fill="#9d70ff" layoutX="50.0" layoutY="51.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              text="First is to upload a photo of your item. To do that, you can use snipping tool or screenshot and crop the actual item. Try to make it as accurate as it should to get better results."
+                              textAlignment="JUSTIFY" wrappingWidth="246.693359375">
+                            <effect>
+                                <Glow/>
+                            </effect>
+                        </Text>
+                        <Text fill="#9d70ff" layoutX="20.0" layoutY="85.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0" text="1" textAlignment="CENTER">
+                            <effect>
+                                <Glow/>
+                            </effect>
+                            <font>
+                                <Font size="33.0"/>
+                            </font>
+                        </Text>
+                        <Text fill="#ffa870" layoutX="50.0" layoutY="133.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0"
+                              text="You can also drag and drop a photo to the right hand panel. After uploading all the items in the jpeg or PNG format. You can proceed to the Setup Automation and find the instructions on the left and get started grinding AFK"
+                              wrappingWidth="246.693359375">
+                            <effect>
+                                <Glow/>
+                            </effect>
+                        </Text>
+                        <Text fill="#ffa870" layoutX="20.0" layoutY="184.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0" text="2" textAlignment="CENTER">
+                            <effect>
+                                <Glow/>
+                            </effect>
+                            <font>
+                                <Font size="33.0"/>
+                            </font>
+                        </Text>
+                        <Line endX="100.0" layoutX="275.0" layoutY="1.0" startX="-28.0" stroke="#00bbf7"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="   S e t u p   A u t o m a t i o n   ">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0"
+                                prefWidth="639.0">
+                        <Button fx:id="startBttn" layoutX="180.0" layoutY="267.0" mnemonicParsing="false"
+                                prefHeight="20.0" prefWidth="144.0"
+                                style="-fx-background-color: transparent; -fx-border-color: #55fa91; -fx-border-radius: 100;"
+                                text="S t a r t" textFill="#55fa91"/>
+                        <Button fx:id="stopBttn" layoutX="334.0" layoutY="267.0" mnemonicParsing="false"
+                                prefHeight="20.0" prefWidth="144.0"
+                                style="-fx-background-color: transparent; -fx-border-color: #fc5454; -fx-border-radius: 100;"
+                                text="S t o p" textFill="#fc5454"/>
+                        <Line endX="87.0" layoutX="510.0" layoutY="1.0" startX="-84.0" stroke="#00bbf7"/>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+        </bottom>
+    </BorderPane>
 </StackPane>
