@@ -1,5 +1,5 @@
 <h1 align="center">Instructions on How to contribute</h1>
-<span align="center"><img src="/logo/Mou.png" alt="mou-logo" width="120px" height="120px" style="max-width:100%;"></span><Br>
+<p align="center"><img src="/logo/Mou.png" alt="mou-logo" width="120px" height="120px" style="max-width:100%;"></p><Br>
 <h2 align="center">Do programming?</h2>
 <p align="center">
 For the IDE, we use IntelliJ. Any IDEs will do. Feel free to pick which ever you want, but<br>
