@@ -1,4 +1,5 @@
 <h1 align="center">Instructions on How to contribute</h1>
+<span align="center"><img src="/logo/Mou.png" alt="mou-logo" width="120px" height="120px" style="max-width:100%;"></span><Br>
 <h2 align="center">Do programming?</h2>
 <p align="center">
 For the IDE, we use IntelliJ. Any IDEs will do. Feel free to pick which ever you want, but<br>
@@ -31,3 +32,5 @@ Locate the File > Project > check Project SDK: [and pick 11+ JDK version of Java
  <p align="center">
  -  Add this module : --module-path="PATH/javafx-sdk-15.0.1/lib" --add-modules=javafx.controls,javafx.fxml
 </p>
+ 
+ <h3 align="center">Gladly appreciate your contribution!!</h3>
