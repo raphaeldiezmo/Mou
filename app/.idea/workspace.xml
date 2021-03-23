@@ -1,50 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb3b4d98-000e-4ed4-bec8-1405f0cdfd17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/mou-project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/FileChoose.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/Mou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/UploadItems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/fileChooser.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/mou.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/mouIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/out/production/mou-project/sample/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/FileChoose.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/Mou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/UploadItems.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/fileChooser.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/mou.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/mouIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mou-project/src/sample/style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="ca0a9496-f54b-43b0-b96b-149ac7c18408" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ProjectId" id="1pwD3eDm5UJrhvNHl6rhRnkGCh4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gui" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gui" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gui" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="module-info" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1q9j1U962ur4OJQzKjsRcuiSlqw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,22 +67,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/org/mou" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4352518" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="JarApplication" />
-      </set>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\resources\org\mou" />
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\resources\org.mou" />
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\java\org\mou" />
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\resources\org\mou" />
+      <recent name="C:\Users\el_ez\IdeaProjects\gui\src\main\resources" />
+      <recent name="C:\Users\el_ez\IdeaProjects\gui" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.gui [run]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="mou-project" />
+      <option name="MAIN_CLASS_NAME" value="org.mou.Main" />
+      <module name="gui.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value="org.mou.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,8 +101,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gui [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.gui [run]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.gui [run]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -84,23 +136,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb3b4d98-000e-4ed4-bec8-1405f0cdfd17" name="Default Changelist" comment="" />
-      <created>1616085061128</created>
+      <changelist id="ca0a9496-f54b-43b0-b96b-149ac7c18408" name="Default Changelist" comment="" />
+      <created>1616498486617</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616085061128</updated>
+      <updated>1616498486617</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gui$gui__run_.ic" NAME="gui [run] Coverage Results" MODIFIED="1616499455021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
