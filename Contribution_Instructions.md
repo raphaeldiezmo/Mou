@@ -13,7 +13,7 @@ IntelliJ, Eclipse or NetBeans. All of these IDEs has advantages on their own.<br
 
 <p align="center">If ever you're using IntelliJ, you might encounter few issues. To avoid those issues, install<br>
 the required SDK versions to your system. After installing them, follow these steps below and make <br>
-sure you have done it correctly other wise you might encounter some problems on running a JavaFX on<br>
+sure you have done it correctly otherwise you might encounter some problems on running a JavaFX on<br>
 your build.</p>
 
 <h3 align="center" style="color:blue"> Setting up the SDKs + Libraries </h3>
