@@ -7,6 +7,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 
+/**
+ * Main class that will run the application, this class contains the main
+ * user interface - doesn't contain any logics, just pure container
+ */
 public class Main extends Application {
 
 
@@ -27,7 +31,4 @@ public class Main extends Application {
     }
 
 
-    public static void main(String[] args) {
-        launch(args);
-    }
 }

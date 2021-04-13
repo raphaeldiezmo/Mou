@@ -62,11 +62,11 @@
                                             <Font size="13.0"/>
                                         </font>
                                     </Text>
-                                    <Hyperlink fx:id="getGitHub" layoutX="14.0" layoutY="229.0"
+                                    <Hyperlink fx:id="gitHubLink" layoutX="14.0" layoutY="229.0"
                                                prefHeight="23.0" prefWidth="217.0"
                                                text="Do you want to contribute? Click here!"
                                                textAlignment="CENTER" textFill="#9e59f0"/>
-                                    <Hyperlink fx:id="reportBugIssue" layoutX="231.0" layoutY="229.0"
+                                    <Hyperlink fx:id="reportBugIssueLink" layoutX="231.0" layoutY="229.0"
                                                text="Report Bugs and Issues?" textFill="#70f1ff"/>
                                     <Hyperlink fx:id="getSuggestion" layoutX="372.0" layoutY="229.0"
                                                text="Any Suggestions for future development?"
