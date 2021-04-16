@@ -123,7 +123,7 @@ public class Controller extends Application implements Initializable {
     private void getUploader() {
     }
     //-----------------------------------------------------------------------------------------------
-    //-------------------------------AUTOMATION TAB FUNCTIONALITY------------------------------------
+    //------------------------------- CALLING THE PYTHON PROGRAM ------------------------------------
     //-----------------------------------------------------------------------------------------------
     private void startAutomation(){
 

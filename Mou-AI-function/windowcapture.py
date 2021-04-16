@@ -1,42 +1,55 @@
 import numpy as np
 import win32gui, win32ui, win32con
+from threading import Thread, Lock
 """
-    Name:       Window Capture Class
-    Details:    This class provides the functionality of capturing the window
-                of the targeted application.
-    Author:     Raphael Di Ezmo
-"""
+    Name:           Window Capture Class
+    Information:    This class provides the functionality of capturing the window
+                    of the targeted application.
+    Author:         Raphael Di Ezmo                                             """
 
 class WindowCapture:
 
     # Window Capture properties
-    w           = 0     # Holds the width of the window of the targeted application window
-    h           = 0     # Holds the height of the window of the targeted app window
-    hwnd        = None  # Handler of the targeted app window
+    hwnd        = None  # Handler of the targeted application's window
+    width       = 0     # Holds the width of the window of the targeted application window
+    height      = 0     # Holds the height of the window of the targeted app window
     cropped_x   = 0     # Holds the border pixels (x axis)
     cropped_y   = 0     # Holds the border pixels (y axis)
-    offset_x    = 0     # Helper for centering the window capturer's content
-    offset_y    = 0     # Helper for centering the window capturer's content
+    offset_x    = 0     # Helper for centering the window capture's content
+    offset_y    = 0     # Helper for centering the window capture's content
+
+    # # Threading properties
+    # stop        = True  # Thread's current state True = stops the thread
+    # lock        = None  # Locks up the current thread's state
+    # wincap      = None  # window capture for updating the window capture in the thread
 
     # Constructor
-    def __init__(self, window_name):
-
+    # Parameter: window_name this holds up the window title name of an application
+    def __init__(self, window_name=None):
+        # initialising thread lock object
+        self.lock = Lock()
         # Finding the handler of the window that is going to be captured
-        self.hwnd = win32gui.FindWindow(None, window_name)
-        # If the window name doesn't exist exception
-        if not self.hwnd:
-            raise Exception('Window not found: {}'.format(window_name))
+        # If the window name is not specified, it will capture the entire screen
+        if window_name is None:
+            self.hwnd = win32gui.getDesktopWindow()
+
+        # Otherwise it will capture the specific window
+        else:
+            self.hwnd = win32gui.FindWindow(None, window_name)
+            # If the window name doesn't exist exception
+            if not self.hwnd:
+                raise Exception('Window not found: {}'.format(window_name))
 
         # Getting the window size
         window_rect = win32gui.GetWindowRect(self.hwnd)
-        self.w = window_rect[2] - window_rect[0]
-        self.h = window_rect[3] - window_rect[1]
+        self.width = window_rect[2] - window_rect[0]
+        self.height = window_rect[3] - window_rect[1]
 
-        # Taking out the massive borders and the empty parts of the window capturer
+        # Taking out the massive borders and the empty parts of the window capture
         border_pixels = 8
         title_bar_pixels = 30
-        self.w = self.w - (border_pixels * 2)
-        self.h = self.h - title_bar_pixels - border_pixels
+        self.width = self.width - (border_pixels * 2)
+        self.height = self.height - title_bar_pixels - border_pixels
         self.cropped_x = border_pixels
         self.cropped_y = title_bar_pixels
 
@@ -55,15 +68,15 @@ class WindowCapture:
         dcObj = win32ui.CreateDCFromHandle(wDC)
         cDC = dcObj.CreateCompatibleDC()
         dataBitMap = win32ui.CreateBitmap()
-        dataBitMap.CreateCompatibleBitmap(dcObj, self.w, self.h)
+        dataBitMap.CreateCompatibleBitmap(dcObj, self.width, self.height)
         cDC.SelectObject(dataBitMap)
-        cDC.BitBlt((0, 0), (self.w, self.h), dcObj, (self.cropped_x, self.cropped_y), win32con.SRCCOPY)
+        cDC.BitBlt((0, 0), (self.width, self.height), dcObj, (self.cropped_x, self.cropped_y), win32con.SRCCOPY)
 
         # convert the raw data into a format opencv can read
         #dataBitMap.SaveBitmapFile(cDC, 'debug.bmp')
         signedIntsArray = dataBitMap.GetBitmapBits(True)
         img = np.fromstring(signedIntsArray, dtype='uint8')
-        img.shape = (self.h, self.w, 4)
+        img.shape = (self.height, self.width, 4)
 
         # free resources
         dcObj.DeleteDC()
@@ -95,9 +108,34 @@ class WindowCapture:
         win32gui.EnumWindows(winEnumHandler, None)
 
     # translate a pixel position on a screenshot image to a pixel position on the screen.
-    # pos = (x, y)
+    # position = (x, y)
     # WARNING: if you move the window being captured after execution is started, this will
     # return incorrect coordinates, because the window position is only calculated in
     # the __init__ constructor.
-    def get_screen_position(self, pos):
-        return (pos[0] + self.offset_x, pos[1] + self.offset_y)
+    def get_screen_position(self, position):
+        return (position[0] + self.offset_x, position[1] + self.offset_y)
+
+    #
+    # # -----------------------------------------------------------------
+    # # -------------------- THREADING METHODS --------------------------
+    # # -----------------------------------------------------------------
+    # # This method initializes the thread and start the thread
+    # def start(self):
+    #     # Re-initializing the stop variable
+    #     self.stop = False
+    #     # Initializing the thread holding the run method
+    #     thread = Thread(target=self.run)
+    #     # Starts up the thread
+    #     thread.start()
+    # # Method to stop the thread of the class
+    # def stop(self):
+    #     # Changes up the value and make the thread stop
+    #     self.stop = True
+    # # Method to run the thread until the stop method is called to stop
+    # def run(self):
+    #     while not self.stop:
+    #         # Locking the thread while updating the capture
+    #         self.lock.acquire()
+    #         # getting the update image of the window application
+    #         self.capture_window()
+    #         self.lock.release()
