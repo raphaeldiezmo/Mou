@@ -1,19 +1,19 @@
 /*Root style*/
 .root{
-    -fx-background-color: #012c33;
+    -fx-background-color: #0f324f;
 }
 
 /*Styling the border pane*/
 .border-pane{
-    -fx-background-color: #012c33;
+    -fx-background-color: #0f324f;
 }
 
 /*Styling the Tabs, Tab-pane, Tab-header, Tab-header-area, Tab-header-background*/
 .tab-pane .tab-header-area .tab-header-background {
-    -fx-background-color: #002b30;
+    -fx-background-color: #092033;
 }
 .tab{
-    -fx-background-color: #012c33;
+    -fx-background-color: #0f324f;
     -fx-pref-width: 200;
 }
 .tab:selected{
@@ -25,7 +25,7 @@
     -fx-pref-width: 200;
    }
 .tab-pane{
-    -fx-background-color:  #012c33;
+    -fx-background-color: #0f324f;
     -fx-text-base-color: #cfff70;
     -fx-focus-color: transparent;
 }

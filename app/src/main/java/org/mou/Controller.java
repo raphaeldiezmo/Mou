@@ -46,17 +46,21 @@ public class Controller extends Application implements Initializable {
     @Override
     public void initialize (URL url, ResourceBundle rb){
 
+        //setting up an action for fetching up the GitHub Link
         gitHubLink.setOnAction(e-> {
             try {
                 goToGitHub();
+                //catches URI Syntax exception if it the link doesn't exist
             } catch (URISyntaxException uriSyntaxException) {
                 uriSyntaxException.printStackTrace();
+                //catches up some Input Ouput exception
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
         });
 
-
+        //setting up an action of the report a bug link inside the
+        // welcome page of the applicatiopn
         reportBugIssueLink.setOnAction(e-> {
             try {
                 reportAnIssue();
@@ -102,19 +106,19 @@ public class Controller extends Application implements Initializable {
     private void reportAnIssue() throws IOException, URISyntaxException {
         //calls the default browser using the stated URI
         desktop.browse(new URI("https://github.com/raphael-di-ezmo/Mou/issues/new"));
-
     }
-
     @FXML
     private void sendSuggestion(){
     }
     //-----------------------------------------------------------------------------------------------
     //-----------------------------------UPLOAD TAB FUNCTIONALITY------------------------------------
     //-----------------------------------------------------------------------------------------------
+    /**
+     * This method will copy a targeted file into a targeted directory
+     */
+    private void uploadPhoto(){
 
-
-
-
+    }
 
     /**
      * This allows the user to get the image uploader where it calls out the other methods
@@ -133,7 +137,9 @@ public class Controller extends Application implements Initializable {
     }
 
     /**
-     * sample run for the python script
+     * This method runs another application program that has the functionality
+     * to detect object, the executable application will be in the same directory
+     * of this application otherwise it won't work and return's null
      */
     private void detectObject() throws Exception{
 

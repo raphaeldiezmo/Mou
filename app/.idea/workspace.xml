@@ -5,7 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0a9496-f54b-43b0-b96b-149ac7c18408" name="Default Changelist" comment="adding comments">
+      <change afterPath="$PROJECT_DIR$/../Mou-AI-function/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mou-AI-function/Bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Mou-AI-function/Bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mou-AI-function/Detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Mou-AI-function/Detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mou-AI-function/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Mou-AI-function/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mou-AI-function/weapon.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../Mou-AI-function/sample_obj.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/0c2fa52c876cf2dfa5a424ac764883e6/trove4j.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/2120eb3c78d5de9f51616aed0d97bc1c/cp_init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/2af75c89b3fb4844673eb7a5ea0b2660/util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/2b691fda3eedbf018dbda954ca8e30e0/kotlin-compiler-plugins-annotation-based-compiler-support.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/343df9e31bbbf277853ca02492c924d4/intellij-deps-fastutil-8.4.1-4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/349ec3440330ac692ca542d2b3595b38/cp_init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/3d4f3dfe36f739b4ad70c49092b464b5/kotlin-stdlib-1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/4252579eccf1a4f17f4a71e85dbacc0c/ion-java-1.6.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/55506a7f816777054dbaddb4f7041b18/init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/560dfc5199f76e9a3650b0d770ef5f1f/cp_init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/62c21899394a65de59f3751dd2a24c45/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/6bcc7e9d27a16d5537877804e244c7c7/gradle-tooling-extension-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/6eae9fd7a571aa07b46eee9be32d0647/android.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/83e44636d422debf314b37ad078fb5d7/cp_proj.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/90ff86f800eb826f57c9270ff627387c/cp_init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/a80f253e21fcb47c1d657c4197a5380c/gradle-api-impldep-6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/b0c8038685dfde2769d74d38c478c0eb/android-extensions-ide.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/b1ad87e0a2c808ee39812f371ccb7807/init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/b59412d2f685672c5cd84cf363863e15/init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/c54a0ef044d2e96975f4299d9eaf58c6/gradle-tooling-extension-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/d92f3b9911383a738a3e6e425a2acb61/kotlin-gradle-gradle-tooling.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/d9eda624f054c1724a42119a9d7ffa54/external-system-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/ee89a6fdb28388d8268a036395485f21/init.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_05731ab2147c9a24cb133c847ce41afd/gradle-tooling-extension-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_118bc84096479f049087a2927f7e9dfb/kotlin-stdlib-1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_2684b811e510862a6f1c578eeb6f5f8d/android-extensions-ide.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_282e4b26c1c01b40806aed0e26d13f97/annotations.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_365b2bf746e093104192ab71d3572bd6/studio.android.sdktools.sdk-common-27.0.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_3d6e9dc86a5c9ed9198649b4cd7621ac/gradle-api-6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_3f3bccc8e10f0fea5d64cf2ef3d99b48/kotlin-stdlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_602b7bb4389d31b0d599a8c6d4cde0c5/gradle-api-impldep-6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_687a6588d5d757494c04b7d21e823a2d/guava-29.0-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_7dd8d3f2b2543fdb9a7a291dd8a20412/gradle-tooling-extension-impl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_8633d0dd4b89ae0adc6522ffa68c6357/studio.android.sdktools.builder-model-27.0.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_ae5967d9acd2a7fe77f469161aa28ff6/android.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_af5d2568d41ff39d0e1bc88f042054d4/trove4j.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_e9cc5720b38ce9a9353dfdda346b25b1/ion-java-1.6.2-3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_ee640714b771f1c542a4484fe0169d72/kotlin-gradle-gradle-tooling.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_f75a80b774bf30279b0ed581de2a0c83/external-system-rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/jars-8/o_fd8ce5a7c6286bdffc77f6a673fbcd7e/util.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/journal-1/file-access.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/journal-1/file-access.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/journal-1/journal-1.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/journal-1/journal-1.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/caches/modules-2/modules-2.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/caches/modules-2/modules-2.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/daemon/6.7/registry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/daemon/6.7/registry.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/daemon/6.7/registry.bin.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/daemon/6.7/registry.bin.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/org/mou/mou.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/org/mou/mou.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/org/mou/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/org/mou/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mou/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mou/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mou/mou.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mou/mou.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mou/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mou/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +177,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4352518" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
