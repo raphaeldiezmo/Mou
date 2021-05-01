@@ -18,15 +18,11 @@ class Detector:
     method_use      = None  # Method that is going to be used for matching
     win_capture     = None  # Window capture
 
-    # # Threading properties
-    # stop            = False # Holds the current status of the thread; stop = false => running
-    # lock            = None  # Holds  the thread lock object
-
-
     # Constructor
-    def __init__(self, target_object_path, method=cv.TM_CCOEFF_NORMED):
-        # # Initializing the thread lock object
-        # self.lock = Lock()
+    def __init__(self, wincap, target_object_path, method=cv.TM_CCOEFF_NORMED):
+
+        # Getting the targeted window capture class
+        self.win_capture = wincap
 
         # Fetching the targeted image that is subjected for detection
         # https://docs.opencv.org/4.2.0/d4/da8/group__imgcodecs.html
@@ -41,22 +37,26 @@ class Detector:
         # TM_CCOEFF, TM_CCOEFF_NORMED, TM_CCORR, TM_CCORR_NORMED, TM_SQDIFF, TM_SQDIFF_NORMED
         self.method_use = method
 
+    # getting all image targets from the directory /img/*
+    def get_all_targets(self):
+        """"read all the images inside the img directory"""
+
+
     # This function produces the detected object from the window capture class
     # Parameters:
     #       self            - this is a method of a class (mandatory parameter)
     #       window_capture  - the view of the cloned window of the targeted application
     #       threshold       - the percentage of matching targeted object detected
     #       debug_mode      - this proves that the object is detected by drawing rectangles
-    def locate(self, window_capture, threshold=0.5):
+    def locate(self, threshold=0.5):
 
         # getting the result matches from the window capture containing the targeted object image
-        result = cv.matchTemplate(window_capture, self.target_object, self.method_use)
+        result = cv.matchTemplate(self.win_capture, self.target_object, self.method_use)
 
         # Getting all the position from the match result that meets
         # the criteria of the given threshold
         locs = np.where(result >= threshold)
         locs = list(zip(*locs[::-1]))
-        #print(locs)
 
         # There will be overlapping rectangles when detecting the target object on the
         # window capture therefore to overcome the overlapping results this loop will
@@ -102,34 +102,17 @@ class Detector:
                 bottom_r    = (x+w, y+h)    # Bottom right
 
                 # Drawing the rectangles on the targeted object
-                cv.rectangle(window_capture, top_l, bottom_r, color=line_color,
+                cv.rectangle(self.win_capture, top_l, bottom_r, color=line_color,
                             lineType=line_type, thickness=2)
 
 
             # This is just for debugging purposes, normally the app won't show this
             # Just the targeted window
-            cv.imshow('Window capture', window_capture)
+            cv.imshow('Window capture', self.win_capture)
             print("DETECTED {}".format(len(points)))
 
             # Returns the points, this could be use in the later part's development
             return points
-
-    # # Method that will start the threading
-    # def start(self):
-    #     self.stopped = False
-    #     t = Thread(target=self.run)
-    #     t.start()
-    #
-    # # Method that will stop the function of the thread
-    # def stop(self):
-    #     self.stopped = True
-    #
-    # # Method that runs all the functionality of the AppBot
-    # def run(self):
-    #     while not self.stopped:
-
-
-
 
 
 

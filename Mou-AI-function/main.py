@@ -1,4 +1,4 @@
-import cv2 as cv
+import cv2 as cv    # pip install opencv-python
 import sys
 from time import time, sleep
 from windowcapture import WindowCapture
@@ -21,20 +21,22 @@ from Bot import AppBot
 # program
 # print(sys.argv[1])
 app_name = 'Supreme Destiny            '
-# Sample image
-targeted_object = Detector('sample_obj.JPG')
-
+# --------------------------------------------------------------------
 # ----------------- END FOR DEBUGGING VARIABLES ----------------------
 # --------------------------------------------------------------------
+
 # Initializing the WindowCapture class
 wincap = WindowCapture(app_name)
-# Initializing the bot
-bot = AppBot((wincap.offset_x, wincap.offset_y), (wincap.width, wincap.height))
 # Initializing the Detector class
-detector = Detector
-
+detector = Detector(wincap, 'sample_obj.JPG')
+# Initializing the bot
+bot = AppBot(detector,
+            (wincap.offset_x,
+            wincap.offset_y),
+            (wincap.width,
+            wincap.height), reps=10)
 # Starting thread of the bot
-#bot.start()
+bot.start()
 
 '''
 # Function that will get the window's application capturing the image content of a window
@@ -54,18 +56,10 @@ def main(app_name):
         # *** For debugging purpose ***
         cv.imshow('Window capture', screen_detector)
 
-        # displays the window capture and detects the targeted object
-        detected_obj = targeted_object.locate(screen_detector, 0.8)
-        # When the detector didn't get to detect any of the targeted objects
-        bot.get_target_positions(detected_obj)
-
         # ---------------------- FOR DEBUGGING PURPOSES -----------------------
         print('Frames per second {}'.format(int(1 / (time() - time_updtr))))
         # # updates the time
         time_updtr = time()
-
-        # Bot actions
-        # Running the function in thread, separating from the main thread
 
         # press '#' with the output window focused to exit.
         # waits 1 ms every loop to process key presses
