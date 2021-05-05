@@ -38,5 +38,16 @@ Locate the File > Project > check Project SDK: [and pick 11+ JDK version of Java
  -  Add this module : --module-path="PATH/javafx-sdk-15.0.1/lib" --add-modules=javafx.controls,javafx.fxml
 </p>
 
+<h2 style="color:#dba70b">Want to do the functionality of the application part?</h2>
+<p>In this part, you will be tackling some programming an automation.</p>
+<h3 style="color:#dba70b">Requirements:</h3>
+<p>
+ <a href="https://www.python.org/downloads/">Python 3+</a><br><br>
+ Don't forget to install the following modules<br>
+ - pywin32 module<br>
+ - opencv  module<br>
+ - tensorflow module<br>
+    </p>
+
  <h3 align="center">Gladly appreciate your contribution!!</h3>
 
